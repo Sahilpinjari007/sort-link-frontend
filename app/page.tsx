@@ -1,9 +1,17 @@
-import React from 'react'
+import Footer from "@/components/landing/footer";
+import Header from "@/components/landing/header";
+import { LandingPage } from "@/components/landing/landing-page";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div className="min-h-screen bg-background">
+      <Header />
+      <main>
+        <LandingPage />
+      </main>
+      <Footer />
+    </div>
+  );
+};
 
-export default Home
+export default Home;
