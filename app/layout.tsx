@@ -23,7 +23,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en"className={inter.variable}>
+    <html lang="en" className={inter.variable} suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            (function(){
+              try{
+                  var t=localStorage.getItem('sortlink-theme')||
+                  'system';var d=t==='dark'||(t==='system'&&matchMedia('(prefers-color-scheme: dark)').matches);
+                document.documentElement.classList.add(d?'dark':'light');
+            }catch(e){}})();`,
+          }}
+        />
+      </head>
       <body>
         <RootComponent>{children}</RootComponent>
       </body>
