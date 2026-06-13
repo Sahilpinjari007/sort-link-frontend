@@ -184,7 +184,7 @@ export function LandingPage() {
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button asChild size="lg" className="h-11 rounded-xl px-6">
-              <Link href="/">
+              <Link href="/auth/sign-up">
                 Start free <ArrowRight className="ml-1.5" />
               </Link>
             </Button>
@@ -471,7 +471,7 @@ export function LandingPage() {
                 className="mt-6 w-full rounded-lg"
                 variant={p.highlight ? "default" : "outline"}
               >
-                <Link href="/">{p.cta}</Link>
+                <Link href="/auth/sign-up">{p.cta}</Link>
               </Button>
               <ul className="mt-6 space-y-2.5 text-sm">
                 {p.features.map((f) => (
@@ -524,7 +524,7 @@ export function LandingPage() {
               variant="secondary"
               className="h-11 rounded-xl px-6"
             >
-              <Link href="/">Start free</Link>
+              <Link href="/auth/sign-up">Start free</Link>
             </Button>
             <Button
               asChild
@@ -532,7 +532,7 @@ export function LandingPage() {
               variant="outline"
               className="h-11 rounded-xl border-background/30 bg-transparent px-6 text-background hover:bg-background/10 hover:text-background"
             >
-              <Link href="/">Sign in</Link>
+              <Link href="/auth/sign-in">Sign in</Link>
             </Button>
           </div>
         </div>

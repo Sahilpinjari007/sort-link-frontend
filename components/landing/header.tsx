@@ -72,13 +72,13 @@ const Header = () => {
         <div className="flex items-center gap-2">
           <ThemeToggle />
           <Link
-            href="/"
+            href="/auth/sign-in"
             className="hidden h-10 items-center rounded-lg px-4 text-[15px] font-medium text-foreground/80 transition-colors hover:bg-accent hover:text-foreground md:inline-flex"
           >
             Login
           </Link>
           <Link
-            href="/"
+            href="/auth/sign-up"
             className="items-center justify-center gap-2 whitespace-nowrap font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground shadow hover:bg-primary/90 py-2 hidden h-10 rounded-lg px-4 text-[14px] md:inline-flex"
           >
             Start free
@@ -157,13 +157,13 @@ const Header = () => {
           </Link>
           <div className="mt-3 grid grid-cols-2 gap-2 border-t border-border/60 pt-3">
             <Link
-              href="/"
+              href="/auth/sign-in"
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2"
             >
               Login
             </Link>
             <Link
-              href="/"
+              href="/auth/sign-up"
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2"
             >
               Start free
